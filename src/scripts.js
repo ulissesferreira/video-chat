@@ -1,7 +1,7 @@
 (function() {
   /** @type {SocketIOClient.Socket} */
   const io = require('socket.io-client');
-  const socket = io.connect('localhost');
+  const socket = io.connect(process.env.API_URL);
   const localVideo = document.querySelector('.localVideo');
   const remoteVideos = document.querySelector('.remoteVideos');
   const peerConnections = {};
