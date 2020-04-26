@@ -4,5 +4,13 @@
   "main": "index.js",
   "repository": "https://github.com/ulissesferreira/video-chat.git",
   "author": "Ulisses Ferreira <ulissesvf@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "prod": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4",
+    "socket.io-client": "^2.3.0"
+  }
 }
